@@ -4,7 +4,7 @@ exports.question = function(req, res){
 };
 
 //GET /quizes/answer
-exports.answer = functioin(req, res){
+exports.answer = function(req, res){
 	if(req.query.respuesta === 'Roma'){
 		res.render('quizes/answer', {respuesta: 'Correcto'});
 		} else {
